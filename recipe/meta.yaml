@@ -1,5 +1,5 @@
 {% set name = "anys" %}
-{% set version = "0.2.0" %}
+{% set version = "0.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: cf8ca25b948ce0c6455d5eb40160334543ed818cdf51e5c3337020ec87bb25c0
+  sha256: f32e16ead49b0a96c530fe43aa4e69ffa68df1fd63042866a994618a08ae9725
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
