@@ -16,16 +16,17 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - hatchling
     - pip
-    - setuptools
+    - python {{ python_min }}
   run:
-    - python >=3.7
+    - python >={{ python_min }}
 
 test:
   requires:
     - pytest
     - pytest-cov
+    - python {{ python_min }}
   source_files:
     - test
     - tox.ini
