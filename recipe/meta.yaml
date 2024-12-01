@@ -1,13 +1,13 @@
 {% set name = "anys" %}
-{% set version = "0.3.0" %}
+{% set version = "0.3.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 56c04f76afe5379a5058aec067befa1fb93070d63cabbd342e04b3d5aff739f8
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 5bcda88fcc490eda840a247c8c18b7a350051f530c288ad530e94c8d139602de
 
 build:
   noarch: python
